@@ -78,6 +78,7 @@ video {
 
 #Layer_2{
   transform: scale(3.9) translate(18.5px, 69px);
+  will-change: transform;
 }
 
 /* Text */
