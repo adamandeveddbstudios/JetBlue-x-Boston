@@ -21,14 +21,13 @@ myFT.on('instantads',function(){
 init()
 function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
-  
   tl.addLabel('frame1', 0)
   .to('#h1', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame1')
   
   .staggerTo('.cls-6',0, {fill: '#00e1ff', ease: "bounce.in" }, 0.01, 'frame1')
   .staggerTo([".cls-1, .cls-2"],0, {fill: '#00a', ease: "bounce.in" }, 0.009, '<')
   
-  .to('#Layer_2', 3, {scale:0.96, x:72, y:-94,  ease: "power1.in" }, 1, 'frame1+=4')
+  .to('#Layer_2', 3, {scale:0.96, transform: "translate3d(72px, -94px, 0)", rotationZ:0.1, force3D: true,  ease: "power1.in" }, 1, 'frame1+=4')
   
 
   .addLabel('frame2', 'frame1+=5')
